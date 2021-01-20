@@ -7,8 +7,6 @@ st.title("Depot status and ETF stats")
 #st.title("yf vanguard all world ")
 
 
-@st.cache
-
 def get_ticker(shortname):
     vanguard = yf.Ticker(shortname)#"#VGWL.DE")
 
