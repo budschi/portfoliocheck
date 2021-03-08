@@ -14,13 +14,14 @@ def get_ticker(shortname):
     return df
 
 
-shares=444.2184
+shares= 560.2146 #444.2184
+btc = 0.01191310
 submit = st.button('refresh')
 if submit:
     vanguard_last_close= get_ticker("VGWL.DE").iloc[-1,3]
     current_stat=vanguard_last_close * shares #get_ticker("VGWL.DE").iloc[-1,3]#
     #444.2184#64.9556
-    invested = 500+5000+5000+27766.4
+    invested = 48836.10#500+5000+5000+27766.4
     st.write("Vanguard FTSE all world close: ", vanguard_last_close, "no. of shares: ", shares)
     st.write("Depot status: ",current_stat, " total invest: ", invested)
     st.write("win / loss: ",current_stat- invested)
