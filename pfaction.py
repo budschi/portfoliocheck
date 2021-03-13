@@ -22,7 +22,7 @@ if submit:
     current_stat=vanguard_last_close * shares #get_ticker("VGWL.DE").iloc[-1,3]#
     #444.2184#64.9556
     invested = 48836.10#500+5000+5000+27766.4
-    btc_last_close = get_ticker("BTC-EUR).iloc[-1,3]
+    btc_last_close = get_ticker("BTC-EUR").iloc[-1,3]
     st.write("BTC last close in EUR: ", btc_last_close, " BTC value: ", (btc_last_close*btc))
     st.write("Vanguard FTSE all world close: ", vanguard_last_close, "no. of shares: ", shares)
     st.write("Depot status: ",current_stat, " total invest: ", invested)
